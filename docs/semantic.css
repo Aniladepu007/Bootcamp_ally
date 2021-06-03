@@ -1,38 +1,52 @@
-  body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-  }
-  
-  header {
-      background-color: cornsilk;
-      padding: 5px 10px;
-  }
-  
-  .title,
-  nav,
-  .author,
-  .gitLink {
-      display: inline;
-      color: black;
-  }
-  
-  nav {
-      float: right;
-  }
-  
-  nav a {
-      color: black;
-      margin: 0 10px;
-  }
-  
-  footer {
-      background-color: darkgray;
-      text-align: center;
-      padding: 10px;
-      bottom: 0;
-      width: 100%;
-  }
-  
-  aside {
-      height: calc(100vh);
-  }
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: cornsilk;
+    padding: 5px 10px;
+}
+
+.title,
+nav,
+.author,
+.gitLink {
+    display: inline;
+    color: black;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: black;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+aside {
+    height: calc(100vh);
+}
+
+.card {
+    border: 1px solid;
+    margin: 21px;
+}
+
+.login {
+    border: 1px solid;
+    /* width: 200px; */
+}
+
+label {
+    font-weight: bold;
+}

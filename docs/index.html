@@ -1,71 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Table</title>
-    <link rel="stylesheet" href="./index.css" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" href=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./video_player.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- <h1 style="color:blue">App</h1>
-    <p> This is ..a ...para.. </p>
-    <p class="pg" id="two"> This is .. para2 </p>
-    <img src="https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg" width="100" height="100">
+    <header>
+        <div>
+            <nav>
+                <a class="back_home" href="./home.html">Back To Home</a>
+            </nav>
+        </div>
+        <div class="heading">
+            <h1 class="this-title">The Video Player</h1>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="content-box">
+            <div class="left-side">
+                <div class="video-wrapper">
+                    <iframe id="video_player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div>
+                        <div style="font-size: 20px" class="video-views">100K Views</div>
+                        <div class="video-attrs">
+                            <span style="font-size: 25px" class="fa fa-heart-o"></span>
+                            <span style="font-size: 25px" class="fa fa-comment-o"></span>
+                            <span style="font-size: 25px" class="fa fa-bookmark-o"> </span>
+                        </div>
+                    </div>
+                </div>
 
-    <ol>
-        <li>111</li>
-    </ol> -->
-    <table style="width: 800px">
-        <tr class="attributes">
-            <td colspan="3">Invoice #12345ABC</td>
-            <td colspan="1">18 Jul 2019</td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <strong>Pay To:</strong> <br /> &emsp; The Tech Park <br /> &emsp; 123 Willow Street <br /> &emsp; Boulevard, LA - 567892<br />
-            </td>
-            <td colspan="2">
-                <strong>Customer:</strong> <br /> &emsp;John Park <br /> &emsp;Dummy Apartments <br /> &emsp;276 Main Street <br /> &emsp;Boulevard, LA -567892 <br />
-            </td>
-        </tr>
+                <div class="separator">
+                    <hr />
+                </div>
 
-        <tr class="attributes">
-            <td>Name/Description</td>
-            <td>Qty.</td>
-            <td>MRP</td>
-            <td>Amount</td>
-        </tr>
-        <tr>
-            <td colspan="1">Biryani</td>
-            <td colspan="1">3</td>
-            <td colspan="1">400</td>
-            <td colspan="1">1200</td>
-        </tr>
-        <tr>
-            <td colspan="1">Chocolate Shake</td>
-            <td colspan="1">3</td>
-            <td colspan="1">200</td>
-            <td colspan="1">600</td>
-        </tr>
-        <tr>
-            <td class="attributes" colspan="3">Subtotal</td>
-            <td colspan="1">1800</td>
-        </tr>
-        <tr>
-            <td class="attributes" colspan="2">Tax</td>
-            <td colspan="1">10%</td>
-            <td colspan="1">180</td>
-        </tr>
-        <tr>
-            <td class="attributes" colspan="3">Grand Total:</td>
-            <td colspan="1">Rs 1620</td>
-        </tr>
-    </table>
+                <div class="description">
+                    <div class="video-name">Croissants | Flour and Stone</div>
+                    <div class="content">
+                        There is no other way but to commit wholeheartedly to a relationship with a croissant. We have all found ourselves at the mercy of its allure. Here, in another epic film by the uber talented Nathan Rodger, our Erin divulges her personal romance with The
+                        Croissant.
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/600595198_390x220.webp" alt="image1" />
+                    <h4>Croissants | Flour and Stone</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/604150056_390x220.webp" alt="image2" />
+                    <h4>Perfect Mashed Potatoes and Gravy</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/726986673_390x220.webp" alt="image3" />
+                    <h4>The Heart of Soba</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/570486309_390x220.webp" alt="image4" />
+                    <h4>Grilled Cheese 9 Ways</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/602705517_390x220.webp" alt="image5" />
+                    <h4>Pineapple Cheesecake</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/537261616_390x220.jpg" alt="image6" />
+                    <h4>Lemony Chicken Noodle Soup</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/608805594_590x332.jpg" alt="image7" />
+                    <h4>Pumpkin Roll</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/601730519_590x332.jpg" alt="image8" />
+                    <h4>How to Brine a Turkey</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/456852083_590x332.jpg" alt="image9" />
+                    <h4>Stop Motion Dry-Brined Turkey Recipe</h4>
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://i.vimeocdn.com/video/600328152_590x332.jpg" alt="image10" />
+                    <h4>Butternut Squash Ravioli</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_text">Copyrights&copy; Reserved 2021.</div>
+    </footer>
 </body>
 
 </html>
