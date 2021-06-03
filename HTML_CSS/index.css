@@ -1,0 +1,27 @@
+#two {
+    color: blue;
+}
+
+.pg {
+    color: orange;
+    font-size: 38px;
+}
+
+p {
+    color: red;
+}
+
+table,
+th,
+td,
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .8rem;
+}
+
+.attributes {
+    background-color: turquoise;
+    font-size: larger;
+    font-weight: bold;
+}
