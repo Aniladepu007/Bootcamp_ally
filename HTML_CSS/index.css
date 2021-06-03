@@ -4,7 +4,7 @@
 
 .pg {
     color: orange;
-    font-size: 38px;
+    font-size: large;
 }
 
 p {
@@ -15,7 +15,7 @@ table,
 th,
 td,
 tr {
-    border: 1px solid black;
+    border: .02rem solid black;
     border-collapse: collapse;
     padding: .8rem;
 }
