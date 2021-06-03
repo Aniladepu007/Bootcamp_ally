@@ -54,6 +54,13 @@ body {
 .video-wrapper iframe {
     width: 590px;
     height: 320px;
+    border-radius: 3px;
+}
+
+.video-wrapper iframe:hover {
+    padding: 1px;
+    border: 1px dashed grey;
+    border-radius: 5px;
 }
 
 .video-wrapper {
@@ -147,7 +154,7 @@ hr {
 
 .image-wrapper:hover {
     color: blue;
-    border: 2px dotted rgb(48, 31, 9);
+    border: 2px dotted rgb(63, 44, 18);
 }
 
 .image-wrapper img {
