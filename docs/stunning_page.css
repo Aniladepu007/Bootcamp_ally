@@ -12,6 +12,10 @@ body {
     box-sizing: border-box;
 }
 
+.logo {
+    margin-left: 11vw;
+}
+
 .logo,
 .top-menu-bar,
 .account-section {
@@ -19,17 +23,17 @@ body {
 }
 
 .logo {
-    margin-left: 40vh;
+    margin-left: 10vw;
     padding: 5vh 10vh 0vh 10vh;
 }
 
 .top-menu-bar {
-    margin-left: 5vw;
-    padding: 5vh 10vh 0vh 10vh;
+    margin-left: 2vw;
+    padding: 4vh 10vh 0vh 10vh;
 }
 
 .account-section {
-    margin-left: 11vw;
+    margin-left: 10vw;
 }
 
 .ulist {
@@ -38,7 +42,7 @@ body {
 
 .ulist>li {
     display: inline-block;
-    margin: 0 8vh;
+    margin: 0 4vh;
 }
 
 .nav-button {
@@ -60,8 +64,6 @@ body {
     position: relative;
     display: inline-block;
     width: max-content;
-    /*height: 200px;
-    border: 5px solid black; */
 }
 
 .wrapper::after {
@@ -74,18 +76,21 @@ body {
     margin-left: 22vw;
     position: absolute;
     /* margin-left: 5vw; */
-    margin-top: 10vh;
+    margin-top: 6vh;
+}
+
+.para {
+    padding-top: 3vh;
+    padding-left: 0.8vw;
+    font-size: 1.2rem;
+    color: #5f5c5c;
 }
 
 .right {
     margin-left: 38vw;
     position: absolute;
-    margin-top: 8vh;
-    /* border: 2px solid lightgray; */
-    /* width: 55vw; */
-    /* height: 400px; */
+    margin-top: 2.5vh;
     float: right;
-    ;
 }
 
 .main-image-div {
