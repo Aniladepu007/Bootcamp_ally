@@ -24,20 +24,36 @@ body {
 }
 
 .top-menu-bar {
-    margin-right: 60vh;
+    margin-left: 5vw;
     padding: 5vh 10vh 0vh 10vh;
+}
+
+.account-section {
+    margin-left: 11vw;
 }
 
 .ulist {
     list-style-type: none;
 }
 
-.nav-button {
-    text-decoration-thickness: 20px;
+.ulist>li {
     display: inline-block;
     margin: 0 8vh;
-    text-underline-offset: 5px;
-    text-rendering: auto;
+}
+
+.nav-button {
+    color: #C0BFBE !important;
+    font-weight: bold !important;
+    text-decoration-line: none !important;
+}
+
+.nav-button:hover {
+    color: #000000 !important;
+    font-weight: bolder;
+    text-decoration-color: #5546C1 !important;
+    text-decoration-line: underline !important;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 1vh;
 }
 
 .wrapper {
@@ -90,6 +106,7 @@ body {
 }
 
 .btn {
+    font-weight: bold;
     color: #5243C0 !important;
     padding: 15px 30px !important;
     border-radius: 25px !important;
