@@ -5,103 +5,143 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Player</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./video_player.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet" />
+    <title>Landing Page</title>
+    <!-- <link rel="stylesheet" href="node_modules/normalize.css" /> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="stunning_page.css" />
+
 </head>
 
 <body>
-    <header>
-        <div>
-            <nav>
-                <a class="back_home" href="./home.html">Back To Home</a>
-            </nav>
-        </div>
-        <div class="heading">
-            <h1 class="this-title">The Video Player</h1>
+    <header class="site-header-menu">
+        <div style="width=100vw;" class="container">
+            <div class="logo">
+                <img src="./assets/stunning-logo.png" alt="logo" height="20vh" width="vw" style="width: 150px; height: 60px" />
+            </div>
+            <div class="top-menu-bar">
+                <nav class="nav-bar-menu">
+                    <ul class="ulist">
+                        <li class="nav-button"><a href="#"> Home </a></li>
+                        <li class="nav-button"><a href="#"> About </a></li>
+                        <li class="nav-button"><a href="#"> Blog </a></li>
+                        <li class="nav-button"><a href="#"> Jobs </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="account-section">
+                <button type="button" class="btn btn-primary">Your Account</button>
+            </div>
         </div>
     </header>
+
+    <!-- <main> -->
+    <!-- <section> -->
     <div class="wrapper">
-        <div class="content-box">
-            <div class="left-side">
-                <div class="video-wrapper">
-                    <iframe id="video_player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    <div>
-                        <div style="font-size: 20px" class="video-views">100K Views</div>
-                        <div class="video-attrs">
-                            <span style="font-size: 25px" class="fa fa-heart-o"></span>
-                            <span style="font-size: 25px" class="fa fa-comment-o"></span>
-                            <span style="font-size: 25px" class="fa fa-bookmark-o"> </span>
-                        </div>
-                    </div>
+        <div class="left">
+            <h1 style="font-size: 5rem; font-weight: bold">
+                Stunning Workplace<span style="color:#5243C1; font-size: 3.5rem; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">.</span>
+                </span>
+            </h1>
+            <p style="padding-top: 5vh; font-size: 1rem; color: #5f5c5c">
+                With Stunning, remote teams can organize projects, manage shifting priorities, and get work done.
+            </p>
+            <div class="main-div-arrows">
+                <div class="new-account-section">
+                    <button type="button" class="new-btn btn btn-primary">
+                  New Account
+                </button>
                 </div>
-
-                <div class="separator">
-                    <hr />
+                <div class="arrow-div">
+                    <a class="arrow " href="# "><img src="./assets/arrow-up.png " alt="arrow-up " height="45vh " width="vw " /></a>
                 </div>
-
-                <div class="description">
-                    <div class="video-name">Croissants | Flour and Stone</div>
-                    <div class="content">
-                        There is no other way but to commit wholeheartedly to a relationship with a croissant. We have all found ourselves at the mercy of its allure. Here, in another epic film by the uber talented Nathan Rodger, our Erin divulges her personal romance with The
-                        Croissant.
-                    </div>
+                <div class="arrow-div">
+                    <a class="arrow " href="# "><img src="./assets/arrow-down.png " alt="arrow-down " height="45vh " width="vw " /></a>
                 </div>
             </div>
 
-            <div class="right-side">
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/600595198_390x220.webp" alt="image1" />
-                    <h4>Croissants | Flour and Stone</h4>
+            <div class="details-wrapper">
+                <!-- <div class="details-wrapper-items"> -->
+                <div class="contents">
+                    <div class="tick-mark">
+                        <a id="tick-white " href="# "><img src="./assets/tick-gray.png " alt="tick-white " /></a>
+                    </div>
+                    <div class="name">
+                        <span class="justify-span"> Dmm design</span>
+                    </div>
+                    <div class="user-icon">
+                        <a id="user-icon " href="# "><img src="./assets/user-pink.png " alt="user-icon " /></a>
+                    </div>
+                    <div class="date">
+                        <span class="justify-span"> 20 Dec</span>
+                    </div>
+                    <div class="color-bar">
+                        <div class="bar1"></div>
+                    </div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/604150056_390x220.webp" alt="image2" />
-                    <h4>Perfect Mashed Potatoes and Gravy</h4>
+
+                <div class="contents">
+                    <div class="tick-mark">
+                        <a id="tick-white " href="# "><img src="./assets/tick-blue.png " alt="tick-white " /></a>
+                    </div>
+                    <div class="name">
+                        <span class="justify-span"> Blurr animation</span>
+                    </div>
+                    <div class="user-icon">
+                        <a id="user-icon " href="# "><img src="./assets/user-orange.png " alt="user-icon " /></a>
+                    </div>
+                    <div class="date">
+                        <span class="justify-span"> 22 Dec</span>
+                    </div>
+                    <div class="color-bar">
+                        <div class="bar2"></div>
+                    </div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/726986673_390x220.webp" alt="image3" />
-                    <h4>The Heart of Soba</h4>
+                <div class="contents">
+                    <div class="tick-mark">
+                        <a id="tick-white " href="# "><img src="./assets/tick-gray.png " alt="tick-white " /></a>
+                    </div>
+                    <div class="name">
+                        <span class="justify-span"> Illustration</span>
+                    </div>
+                    <div class="user-icon">
+                        <a id="user-icon " href="# "><img src="./assets/user-blue.png " alt="user-icon " /></a>
+                    </div>
+                    <div class="date"><span class="justify-span"> Dec</span></div>
+                    <div class="color-bar">
+                        <div class="bar3"></div>
+                    </div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/570486309_390x220.webp" alt="image4" />
-                    <h4>Grilled Cheese 9 Ways</h4>
+                <div class="contents">
+                    <div class="tick-mark">
+                        <a id="tick-white " href="# "><img src="./assets/tick-gray.png " alt="tick-white " /></a>
+                    </div>
+                    <div class="name">
+                        <span class="justify-span"> Refunds</span>
+                    </div>
+                    <div class="user-icon">
+                        <a id="user-icon " href="# "><img src="./assets/user-red.png " alt="user-icon " /></a>
+                    </div>
+                    <div class="date">
+                        <span class="justify-span"> 28 Dec</span>
+                    </div>
+                    <div class="color-bar">
+                        <div class="bar4"></div>
+                    </div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/602705517_390x220.webp" alt="image5" />
-                    <h4>Pineapple Cheesecake</h4>
-                </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/537261616_390x220.jpg" alt="image6" />
-                    <h4>Lemony Chicken Noodle Soup</h4>
-                </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/608805594_590x332.jpg" alt="image7" />
-                    <h4>Pumpkin Roll</h4>
-                </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/601730519_590x332.jpg" alt="image8" />
-                    <h4>How to Brine a Turkey</h4>
-                </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/456852083_590x332.jpg" alt="image9" />
-                    <h4>Stop Motion Dry-Brined Turkey Recipe</h4>
-                </div>
-                <div class="image-wrapper">
-                    <img src="https://i.vimeocdn.com/video/600328152_590x332.jpg" alt="image10" />
-                    <h4>Butternut Squash Ravioli</h4>
-                </div>
+
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="main-image-div">
+                <img src="./assets/landing-section-image.png " alt="landing section image " />
             </div>
         </div>
     </div>
-
-    <footer class="footer">
-        <div class="footer_text">Copyrights&copy; Reserved 2021.</div>
-    </footer>
+    <!-- </section> -->
+    <!-- </main> -->
 </body>
 
 </html>
