@@ -125,13 +125,13 @@ body {
 .details-wrapper1,
 .details-wrapper2,
 .details-wrapper3 {
-    margin: 1.1vh;
+    margin: 1.1vh 11.1vh 1.1vh 0vh;
     border-radius: 25px;
     background-color: #f0f0f0;
     display: grid !important;
-    grid-template-columns: 2.25vw 7vw 3vw 3vw 2.5vw !important;
+    grid-template-columns: 3vw 7vw 3vw 4vw 3vw !important;
     align-items: center;
-    text-align: center;
+    text-align: -webkit-left;
 }
 
 .details-wrapper1 {
