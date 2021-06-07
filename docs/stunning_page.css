@@ -137,9 +137,10 @@ body {
 
 .contents {
     /* display: table; */
+    box-shadow: 0 0 100px #E4E4E4;
     vertical-align: middle;
     width: 18vw;
-    background-color: lightgray;
+    background-color: #F9F9F9;
     margin-top: 2vh;
     margin-bottom: 2vh;
     padding-top: 8px;
@@ -147,9 +148,13 @@ body {
     border-radius: 18px;
 }
 
-.contents>div {
-    margin: 4px;
-    /* display: table-row-group; */
+.white {
+    box-shadow: 0 0 100px #dbdbdb;
+    background-color: #ffffff !important;
+}
+
+.details-wrapper>div {
+    margin: 2vh;
 }
 
 .bar1 {
