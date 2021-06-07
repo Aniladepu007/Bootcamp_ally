@@ -12,10 +12,6 @@ body {
     box-sizing: border-box;
 }
 
-.logo {
-    margin-left: 11vw;
-}
-
 .logo,
 .top-menu-bar,
 .account-section {
@@ -64,12 +60,6 @@ body {
     position: relative;
     display: inline-block;
     width: max-content;
-}
-
-.wrapper::after {
-    content: "";
-    clear: both;
-    display: block;
 }
 
 .left {
@@ -131,60 +121,59 @@ body {
     padding: 0 1vh;
 }
 
-.details-wrapper {
-    padding: 6vh 0;
+.details-wrapper,
+.details-wrapper1,
+.details-wrapper2,
+.details-wrapper3 {
+    margin: 1.1vh;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    display: grid !important;
+    grid-template-columns: 2.25vw 7vw 3vw 3vw 2.5vw !important;
+    align-items: center;
     text-align: center;
 }
 
-.contents>div {
-    display: inline-block;
-}
-
-.contents {
-    box-shadow: 0 0 100px #E4E4E4;
-    vertical-align: middle;
-    width: 18vw;
-    background-color: #F9F9F9;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 18px;
-}
-
-.white {
-    box-shadow: 0 0 100px #dbdbdb;
+.details-wrapper1 {
+    box-shadow: 5px 0 50px #dbdbdb;
     background-color: #ffffff !important;
 }
 
-.details-wrapper>div {
-    margin: 2vh;
+.details-wrapper>div,
+.details-wrapper1>div,
+.details-wrapper2>div,
+.details-wrapper3>div {
+    margin: 0.8vh;
+}
+
+.bar1,
+.bar2,
+.bar3,
+.bar4 {
+    width: 1.7vw;
+    height: 1.6vh;
+    border-radius: 25px;
 }
 
 .bar1 {
     background-color: #FFD8DB;
-    width: 1.1vw;
-    height: 1.8vh;
-    border-radius: 25px;
 }
 
 .bar2 {
     background-color: #FD6534;
-    width: 1.1vw;
-    height: 1.8vh;
-    border-radius: 25px;
 }
 
 .bar3 {
     background-color: #9FD196;
-    width: 1.1vw;
-    height: 1.8vh;
-    border-radius: 25px;
 }
 
 .bar4 {
     background-color: #FFE49F;
-    width: 1.1vw;
-    height: 1.8vh;
-    border-radius: 25px;
+}
+
+.right,
+.left {
+    content: "";
+    clear: both;
+    display: block;
 }
