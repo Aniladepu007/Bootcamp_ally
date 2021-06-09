@@ -67,6 +67,7 @@ body {
 }
 
 .left {
+    width: 27%;
     margin-left: 20vw;
     position: absolute;
     /* margin-left: 5vw; */
@@ -81,7 +82,8 @@ body {
 }
 
 .right {
-    margin-left: 38vw;
+    width: 42%;
+    margin-left: 33vw;
     position: absolute;
     margin-top: 2.5vh;
     float: right;
@@ -184,3 +186,5 @@ body {
     clear: both;
     display: block;
 }
+
+.footer {}

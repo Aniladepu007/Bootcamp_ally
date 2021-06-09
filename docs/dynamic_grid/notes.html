@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="input-box">
+                <input id="input-note" />
+                <button id="input-button">Add Note</button>
+            </div>
+        </div>
+
+        <div id="Notes-List"></div>
+        <script>
+            var notes = [];
+            const notesList = document.getElementById("Notes-List");
+
+            for (var i = 0; i < 5; i++) {
+                notes.push(`new note ${i}`);
+            }
+
+            const addButton = document.querySelector("#input-button");
+            const inputNote = document.querySelector("#input-note");
+            addButton.addEventListener("click", (event) => {
+                console.log(notes);
+                const newNote = document.createElement("div");
+                let id = Math.random();
+                newNote.id = id;
+                newNote.className = "Note";
+                newNote.textContent = inputNote.value;
+                const deleteButton = document.createElement("button");
+                deleteButton.className = "deleteButton";
+                deleteButton.textContent = "Delete me";
+                deleteButton.addEventListener("click", (event) => {
+                    console.log(`notes ${id} should be deleted`);
+                    newNote.remove();
+                });
+                newNote.appendChild(deleteButton);
+                notesList.appendChild(newNote);
+            });
+        </script>
+    </div>
+</body>
+
+</html>

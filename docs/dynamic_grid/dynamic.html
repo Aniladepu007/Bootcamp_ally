@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic grid</title>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <div>
+        <!-- <h1>Title</h1> -->
+        <h1 style="text-align: center">Stop Watch</h1>
+    </div>
+
+    <!-- <input id="count" placeholder="Enter an integer" /><br /><br />
+    <button>Click Me</button>
+    <div id="box"></div> -->
+
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+
+    <br />
+    <div class="wrapper" style="text-align: center">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <br /><br />
+    <h1 style="text-align: center" id="watch"></h1>
+    <script>
+        const startButton = document.querySelector("#start");
+        const stopButton = document.querySelector("#stop");
+        const resetButton = document.querySelector("#reset");
+
+        const timeTarget = document.querySelector("#watch");
+
+        var H = 0,
+            M = 0,
+            S = 0,
+            MS = 0,
+            dh,
+            dm,
+            ds,
+            dms;
+        var prevH = 0,
+            prevM = 0,
+            prevS = 0,
+            prevMS = 0;
+
+        startButton.onclick = (e) => {
+            // startButton.disabled = "True";
+            e.preventDefault();
+            let offset = new Date();
+            (dh = offset.getHours()),
+            (dm = offset.getMinutes()),
+            (ds = offset.getSeconds()),
+            (dms = offset.getMinutes());
+            interval = setInterval(() => {
+                const currentDate = new Date();
+                (H = currentDate.getHours() - dh + prevH),
+                (M = currentDate.getMinutes() - dm + prevM),
+                (S = currentDate.getSeconds() - ds + prevS),
+                (MS = currentDate.getMilliseconds() - dms + prevMS);
+                timeTarget.textContent = `${H} : ${M} : ${S} : ${MS}`;
+            }, 100);
+        };
+
+        stopButton.onclick = (e) => {
+            // startButton.disabled = "False";
+            e.preventDefault();
+            clearInterval(interval);
+            (prevH = H), (prevM = M), (prevS = S), (prevMS = MS);
+        };
+
+        resetButton.onclick = (e) => {
+            e.preventDefault();
+            timeTarget.textContent = `00 : 00 : 00 : 000`;
+            (prevH = 0), (prevM = 0), (prevS = 0), (prevMS = 0);
+        };
+    </script>
+</body>
+
+</html>
