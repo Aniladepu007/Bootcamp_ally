@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>Shop Lane</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <nav class="top-navbar">
+        <a class="logo" href="#">
+            <h4><span class="green-color">SHOP</span>LANE</h4>
+        </a>
+
+        <ul class="nav-links nav-active">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#clothings">Clothings</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+        </ul>
+
+        <div class="icons">
+            <i class="fa fa-search"></i>
+            <div class="cart" id="cartIcon">
+                <a href="#">
+                    <i class="fa fa-shopping-cart">
+              <span id="cart-count">0</span>
+            </i>
+                </a>
+            </div>
+            <i class="fa fa-user-circle-o"></i>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h2 class="section-heading">Clothing for Men and Women</h2>
+        <div class="container" id="clothingCards"></div>
+    </section>
+
+    <section>
+        <h2 class="section-heading">Accessories for Men and Women</h2>
+        <div class="container" id="accessoriesCards"></div>
+    </section>
+
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+
+    <footer>
+        <ul class="online-store">
+            <li>
+                <h3>Online Store</h3>
+            </li>
+            <li><a href="#">Men Clothing</a></li>
+            <li><a href="#">Women Clothing</a></li>
+            <li><a href="#">Men Accessories</a></li>
+            <li><a href="#">Women Accessories</a></li>
+        </ul>
+        <ul class="helpful-links">
+            <li>
+                <h3>Helpful Links</h3>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="patners">
+            <li>
+                <h3>Patners</h3>
+            </li>
+            <li><a href="#">Zara</a></li>
+            <li><a href="#">Pantaloons</a></li>
+            <li><a href="#">Levis</a></li>
+            <li><a href="#">Ucb</a></li>
+            <li><a href="#">+ Many More</a></li>
+        </ul>
+        <ul class="address">
+            <li>
+                <h3>Address</h3>
+            </li>
+            <li>Building 101</li>
+            <li>Central Avenue</li>
+            <li>LA - 902722</li>
+            <li>United States</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

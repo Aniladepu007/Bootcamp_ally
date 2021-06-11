@@ -19,8 +19,6 @@ class Child < Parent
     end
 end
 
-
-
 Parent.new
 
 childObj = Child.new
