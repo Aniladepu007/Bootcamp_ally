@@ -1,9 +1,9 @@
 # The Book of Ruby - http://www.sapphiresteel.com
 
-class NoNameError < Exception
-	# def to_str
-	# 	"No Name given!"		
-	# end
+class NoNameError
+	def to_str
+		"No Name given!"		
+	end
 end
 
 def sayHello( aName )
@@ -13,7 +13,7 @@ def sayHello( aName )
 		end
 	rescue Exception => e
 		puts( e.class )
-		puts( "message: " + e.to_str )
+		# puts( "message: " + e )
 		puts( e.backtrace )
 	else
 		puts( "Hello #{aName}" )
