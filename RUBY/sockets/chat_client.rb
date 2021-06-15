@@ -11,7 +11,7 @@ class Client
    end
 
    def send_request()
-      puts "Please enter your username to establish a connection..."
+      puts "\nPlease enter your username to establish a connection..."
       begin
          Thread.new do
             loop do

@@ -1,6 +1,7 @@
 require 'socket'   
+
 hostname = 'localhost'   
-port = 8081  
+port = 8081
 
 socket = TCPSocket.open(hostname, port)   
 
