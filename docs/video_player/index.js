@@ -41,7 +41,7 @@ const loadContent = async() => {
 };
 
 const playVideo = async(id) => {
-    const video = await fetchContent(`http://5d76bf96515d1a0014085cf9.mockapi.io/video/${id}`);
+    const video = await fetchContent(`https://5d76bf96515d1a0014085cf9.mockapi.io/video/${id}`);
     let videoWrapper = document.getElementById('video_player');
     videoWrapper.src = `https://player.vimeo.com/video/${video.vimeoId}`;
 
