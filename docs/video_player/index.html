@@ -30,9 +30,9 @@
         <div class="content-box">
             <div class="left-side">
                 <div class="video-wrapper">
-                    <iframe id="video_player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" allowfullscreen></iframe>
+                    <iframe id="video_player" src="https://player.vimeo.com/video/190062231" allowfullscreen=""></iframe>
                     <div>
-                        <div style="font-size: 20px" class="video-views">100K Views</div>
+                        <div style="font-size: 20px" class="video-views"></div>
                         <div class="video-attrs">
                             <span style="font-size: 25px" class="fa fa-heart-o"></span>
                             <span style="font-size: 25px" class="fa fa-comment-o"></span>
@@ -55,7 +55,7 @@
             </div>
 
             <div class="right-side">
-                <div class="image-wrapper">
+                <!-- <div class="image-wrapper">
                     <img src="https://i.vimeocdn.com/video/600595198_390x220.webp" alt="image1" />
                     <h4>Croissants | Flour and Stone</h4>
                 </div>
@@ -94,14 +94,24 @@
                 <div class="image-wrapper">
                     <img src="https://i.vimeocdn.com/video/600328152_590x332.jpg" alt="image10" />
                     <h4>Butternut Squash Ravioli</h4>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 
+    <!-- <script>
+        content_list = fetch('http://5d76bf96515d1a0014085cf9.mockapi.io/playlist')
+            .then(res => {
+                return res.json()
+            });
+        .then();
+    </script> -->
+
     <footer class="footer">
-        <div class="footer_text">&copy; Copyrights Reserved 2021.</div>
+        <div class="footer_text">&copy; Sample footer 2021.</div>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
