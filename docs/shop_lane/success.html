@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Shop Lane - A place for shopping</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" ref="../lib/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../lib/slick/slick-theme.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+  </head>
+
+  <body>
+    <nav class="top-navbar">
+      <a class="logo" href="#">
+        <h4><span class="green-color">SHOP</span>LANE</h4>
+      </a>
+
+      <ul class="nav-links nav-active">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#clothingCards">Clothings</a></li>
+        <li><a href="#accessoriesCards">Accessories</a></li>
+      </ul>
+
+      <div class="icons">
+        <i class="fa fa-search"></i>
+        <div class="cart" id="cartIcon">
+          <a href="#">
+            <i class="fa fa-shopping-cart">
+              <span id="cart-count">0</span>
+            </i>
+          </a>
+        </div>
+        <i class="fa fa-user-circle-o"></i>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="banner" style="position: relative">
+      <img src="https://shoplane.netlify.app/img/img1.png" alt="Img-1" />
+      <img src="https://shoplane.netlify.app/img/img2.png" alt="Img-2" />
+      <img src="https://shoplane.netlify.app/img/img3.png" alt="Img-3" />
+      <img src="https://shoplane.netlify.app/img/img4.png" alt="Img-4" />
+    </section>
+
+    <section id="features">
+      <div class="icon-container">
+        <div class="img-wrapper">
+          <img src="https://shoplane.netlify.app/img/icon1.png" alt="" />
+        </div>
+        <h4>Free Delivery</h4>
+      </div>
+      <div class="icon-container">
+        <div class="img-wrapper">
+          <img src="https://shoplane.netlify.app/img/icon2.png" alt="" />
+        </div>
+        <h4>Money Back Gurantee</h4>
+      </div>
+      <div class="icon-container">
+        <div class="img-wrapper">
+          <img src="https://shoplane.netlify.app/img/icon3.png" alt="" />
+        </div>
+        <h4>Always Support</h4>
+      </div>
+      <div class="icon-container">
+        <div class="img-wrapper">
+          <img src="https://shoplane.netlify.app/img/icon4.png" alt="" />
+        </div>
+        <h4>Secure Payment</h4>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-heading">Clothing for Men and Women</h2>
+      <div class="container" id="clothingCards"></div>
+    </section>
+
+    <section>
+      <h2 class="section-heading">Accessories for Men and Women</h2>
+      <div class="container" id="accessoriesCards"></div>
+    </section>
+
+    <footer>
+      <ul class="online-store">
+        <li>
+          <h3>Online Store</h3>
+        </li>
+        <li><a href="#">Men Clothing</a></li>
+        <li><a href="#">Women Clothing</a></li>
+        <li><a href="#">Men Accessories</a></li>
+        <li><a href="#">Women Accessories</a></li>
+      </ul>
+      <ul class="helpful-links">
+        <li>
+          <h3>Helpful Links</h3>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="partners">
+        <li>
+          <h3>Partners</h3>
+        </li>
+        <li><a href="#">Zara</a></li>
+        <li><a href="#">Pantaloons</a></li>
+        <li><a href="#">Levis</a></li>
+        <li><a href="#">Ucb</a></li>
+        <li><a href="#">+ Many More</a></li>
+      </ul>
+      <ul class="address">
+        <li>
+          <h3>Address</h3>
+        </li>
+        <li>Building 101</li>
+        <li>Central Avenue</li>
+        <li>LA - 902722</li>
+        <li>United States</li>
+      </ul>
+    </footer>
+
+    <script src="../lib/slick/slick.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/image_slider.js"></script>
+    <script src="./js/products.js"></script>
+  </body>
+</html>
