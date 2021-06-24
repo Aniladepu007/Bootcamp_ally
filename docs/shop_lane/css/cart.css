@@ -1,0 +1,160 @@
+#cart {
+  margin: 4% 6%;
+}
+#cart h1 {
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-side {
+  width: 52%;
+  margin-top: 60px;
+}
+.right-side {
+  width: 45%;
+  margin-top: 60px;
+}
+.left-side p {
+  color: rgb(27, 25, 25);
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.item {
+  display: flex;
+  width: 600px;
+  margin-top: 25px;
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.item img {
+  width: 80px;
+  height: 100px;
+  border-radius: 4px;
+}
+.item .detail {
+  padding-left: 15px;
+}
+.item .detail p {
+  font-size: 16px;
+  margin-top: 8px;
+}
+.total-amount {
+  width: 450px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.total-amount h2 {
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.total-amount p {
+  margin-top: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.total-amount p span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.total-amount button {
+  font-size: 16px;
+  margin-top: 50px;
+  font-weight: 300;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #009688;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.total-amount button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 1024px) {
+  .item {
+    width: 450px;
+  }
+  .total-amount {
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .left-side {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .right-side {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .item {
+    width: 600px;
+  }
+  .total-amount {
+    width: 600px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .item {
+    width: 350px;
+  }
+  .item .detail h1 {
+    font-size: 20px;
+  }
+  .item .detail p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .item {
+    width: 325px;
+  }
+  .item .detail h1 {
+    font-size: 18px;
+  }
+  .total-amount {
+    width: 325px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .item {
+    width: 275px;
+  }
+  .item .detail h1 {
+    font-size: 16px;
+  }
+  .total-amount {
+    width: 275px;
+  }
+}
+
+.order-confirm {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.order-confirm img {
+  height: 300px;
+}
+.order-confirm h2 {
+  margin-top: 60px;
+}
+.order-confirm p {
+  margin-top: 10px;
+}

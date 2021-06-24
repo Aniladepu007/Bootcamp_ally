@@ -1,8 +1,20 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./App.css"
 import axios from "axios";
 
-export default class CardsPanel extends Component {
+const Footer = () => {
+    const [name, newName] = useState("name");
+    return(
+        <>
+            <h1>{name}</h1>
+            <button onClick={()=> newName("newname")}>Click</button>
+        </>
+    );
+} 
+
+export default Footer;
+
+export class CardsPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const dots = document.querySelectorAll(".slick-dots");
-  console.log("test", dots);
+  //   console.log("test", dots);
   for (dot of dots) dot.style.fontSize = "large";
 });

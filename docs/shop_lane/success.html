@@ -35,12 +35,11 @@
     />
 
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/features.css" />
   </head>
 
   <body>
     <nav class="top-navbar">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <h4><span class="green-color">SHOP</span>LANE</h4>
       </a>
 
@@ -53,7 +52,7 @@
       <div class="icons">
         <i class="fa fa-search"></i>
         <div class="cart" id="cartIcon">
-          <a href="#">
+          <a href="cart.html">
             <i class="fa fa-shopping-cart">
               <span id="cart-count">0</span>
             </i>
@@ -69,51 +68,12 @@
       </div>
     </nav>
 
-    <section id="banner" style="position: relative">
-      <img src="https://shoplane.netlify.app/img/img1.png" alt="Img-1" />
-      <img src="https://shoplane.netlify.app/img/img2.png" alt="Img-2" />
-      <img src="https://shoplane.netlify.app/img/img3.png" alt="Img-3" />
-      <img src="https://shoplane.netlify.app/img/img4.png" alt="Img-4" />
-    </section>
+    <div class="success">
+      <img src="https://shoplane.netlify.app/img/img_confirm.png" alt="" />
+      <h3>Order Successful. Thank you for shopping with us!</h3>
+    </div>
 
-    <section id="features">
-      <div class="icon-container">
-        <div class="img-wrapper">
-          <img src="https://shoplane.netlify.app/img/icon1.png" alt="" />
-        </div>
-        <h4>Free Delivery</h4>
-      </div>
-      <div class="icon-container">
-        <div class="img-wrapper">
-          <img src="https://shoplane.netlify.app/img/icon2.png" alt="" />
-        </div>
-        <h4>Money Back Gurantee</h4>
-      </div>
-      <div class="icon-container">
-        <div class="img-wrapper">
-          <img src="https://shoplane.netlify.app/img/icon3.png" alt="" />
-        </div>
-        <h4>Always Support</h4>
-      </div>
-      <div class="icon-container">
-        <div class="img-wrapper">
-          <img src="https://shoplane.netlify.app/img/icon4.png" alt="" />
-        </div>
-        <h4>Secure Payment</h4>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-heading">Clothing for Men and Women</h2>
-      <div class="container" id="clothingCards"></div>
-    </section>
-
-    <section>
-      <h2 class="section-heading">Accessories for Men and Women</h2>
-      <div class="container" id="accessoriesCards"></div>
-    </section>
-
-    <footer>
+    <footer style="margin-top: 15vh">
       <ul class="online-store">
         <li>
           <h3>Online Store</h3>
@@ -153,9 +113,6 @@
     </footer>
 
     <script src="../lib/slick/slick.min.js"></script>
-    <script src="./js/data.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/image_slider.js"></script>
-    <script src="./js/products.js"></script>
+    <script src="./js/checkout.js"></script>
   </body>
 </html>
