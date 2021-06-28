@@ -1,70 +1,103 @@
-import React, { Component, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css"
 import axios from "axios";
 
-const Footer = () => {
-    const [name, newName] = useState("name");
+const Products = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        axios("https://5d76bf96515d1a0014085cf9.mockapi.io/product")
+        .then((res)=> {setProducts(res.data)})
+        .catch((err) => alert(err));
+    }, []); //CompDidMount
+
+    useEffect(() => {}); //CompDidMount and DidUpdate
+    useEffect(() => {
+        return () => {
+            //cleanup
+        };
+    }, []); //CompWillUnmount
+
     return(
-        <>
-            <h1>{name}</h1>
-            <button onClick={()=> newName("newname")}>Click</button>
-        </>
+    <>
+    {products.length && products.map((product) => (
+        <div>
+            <img src={product.preview} width="200" alt={product.name} />
+        <h1>
+        {product.name}
+        </h1>
+        </div>
+    )
+    )}
+    </>
     );
-} 
+};
 
-export default Footer;
+export default Products;
 
-export class CardsPanel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      moviesList: [],
-      loader: true
-    };
-  }
+// const Footer = () => {
+//     const [name, newName] = useState("name");
+//     return(
+//         <>
+//             <h1>{name}</h1>
+//             <button onClick={()=> newName("newname")}>Click</button>
+//         </>
+//     );
+// } 
 
-  componentDidMount() {
-      setTimeout(() => {
-      fetch("https://www.omdbapi.com/?apikey=45f0782a&s=war")
-      .then((res) => res.json())
-      .then((res) => {
-        this.setState({ moviesList: res.Search , loader:false});
-      });
-    }, 500);
-    // setTimeout(() => {
-    // axios.get("https://www.omdbapi.com/?apikey=45f0782a&s=war")
-    //     .then((res) => {
-    //         this.setState({moviesList: res.Search, loader:false})
-    //     });
-    // }, 3000);
-  }
+// export default Footer;
 
-  render() {
-    const { moviesList:list, loader } = this.state;
-    console.log(list);
-    return(
-    <div className="movies">
-        {loader ? (<h1>Loading...</h1>) :
-        (
-            Array.isArray(list) &&
-            list.length &&
-            list.map(({Title, Year, Poster})=> {
-                return(
-                    <div className="movie">
-                        <h2>{Title}</h2>
-                        <div>
-                            <img src={Poster} width="200" height="250" alt={Title} />
-                        </div>
-                        <p>{Year}</p>
-                    </div>
-                );
-            })
-        )}
-    </div>
-    );
-}
+// export class CardsPanel extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       moviesList: [],
+//       loader: true
+//     };
+//   }
 
-}
+//   componentDidMount() {
+//       setTimeout(() => {
+//       fetch("https://www.omdbapi.com/?apikey=45f0782a&s=war")
+//       .then((res) => res.json())
+//       .then((res) => {
+//         this.setState({ moviesList: res.Search , loader:false});
+//       });
+//     }, 500);
+//     // setTimeout(() => {
+//     // axios.get("https://www.omdbapi.com/?apikey=45f0782a&s=war")
+//     //     .then((res) => {
+//     //         this.setState({moviesList: res.Search, loader:false})
+//     //     });
+//     // }, 3000);
+//   }
+
+//   render() {
+//     const { moviesList:list, loader } = this.state;
+//     console.log(list);
+//     return(
+//     <div className="movies">
+//         {loader ? (<h1>Loading...</h1>) :
+//         (
+//             Array.isArray(list) &&
+//             list.length &&
+//             list.map(({Title, Year, Poster})=> {
+//                 return(
+//                     <div className="movie">
+//                         <h2>{Title}</h2>
+//                         <div>
+//                             <img src={Poster} width="200" height="250" alt={Title} />
+//                         </div>
+//                         <p>{Year}</p>
+//                     </div>
+//                 );
+//             })
+//         )}
+//     </div>
+//     );
+// }
+
+// }
 
 
 // class App extends Component {

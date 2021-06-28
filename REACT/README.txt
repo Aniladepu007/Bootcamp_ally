@@ -1,3 +1,7 @@
+
+npm i react-router-dom
+# for routing
+
 Inside that directory, you can run several commands:
 
   yarn start
