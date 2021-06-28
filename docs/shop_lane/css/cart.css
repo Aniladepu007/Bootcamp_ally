@@ -40,6 +40,12 @@
 .item .detail {
   padding-left: 15px;
 }
+.item .detail h3 {
+  font-size: 20px;
+  margin-top: 8px;
+  font-weight: bolder;
+}
+
 .item .detail p {
   font-size: 16px;
   margin-top: 8px;

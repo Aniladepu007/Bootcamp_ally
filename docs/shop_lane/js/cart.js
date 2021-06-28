@@ -29,4 +29,8 @@ const shouldAddtoCart = (item) => {
   });
 };
 
-updateCart();
+const deleteCart = () => {
+  localStorage.removeItem("cart");
+};
+
+updateCart(); //for updating in all pages
