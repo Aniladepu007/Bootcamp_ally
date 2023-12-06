@@ -1,6 +1,6 @@
 ## Bootcamp_ally
 
-- [https://aniladepu007.github.io/Bootcamp_ally/](https://aniladepu007.github.io/Bootcamp_ally/)
+- [https://anil-adepu.github.io/Bootcamp_ally/](https://anil-adepu.github.io/Bootcamp_ally/)
 
 <!-- rails _3.2.19_ new myApp
  -->
